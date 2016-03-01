@@ -6,12 +6,16 @@ Example uses can be found in the exampleCode package, including a bot that polls
 
 https://twitter.com/WordCloudBott
 
-#Improvements:
+##Requirements:
+-Configured Twitter4j.properties (not included) in the root directory. Details at: http://twitter4j.org/en/configuration.html
+
+##Improvements:
 - Improve testing coverage of SQL methods.
 - Work around/solution to rate limits.
 - Improve word cloud images.
 
-#Packages used:
+##Packages used:
 
 https://github.com/yusuke/twitter4j/
 https://github.com/kennycason/kumo/
+

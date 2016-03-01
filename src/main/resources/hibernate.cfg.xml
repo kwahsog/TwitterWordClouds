@@ -3,21 +3,15 @@
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-
-    <session-factory>
-    
-    
-<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <session-factory> 
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost/world</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
         <property name="hibernate.connection.CharSet">utf8mb4</property>
 		<property name="hibernate.connection.characterEncoding">utf8</property>
-   		<property name="hibernate.connection.useUnicode">true</property>
-   
-   <mapping class="twitterdata.TwitterData"/>
-   
-        
+   		<property name="hibernate.connection.useUnicode">true</property>   
+		<mapping class="twitterdata.TwitterData"/>          
     </session-factory>
 </hibernate-configuration>
